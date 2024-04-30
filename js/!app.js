@@ -50,8 +50,28 @@ for(let data of product){
 
 
 const filterRedItems = product.filter((row) => row.price  < 100)
-//ici il va m'afficher pour les prix inbferieur a 100 grace a la ligne d'en haut.
+//ici il va m'afficher pour les prix inferieur a 100 grace a la ligne d'en haut.
 console.table(filterRedItems)
+
+const personne_1 = {
+    nom : "Bernee Lee",
+    prenom : "Tim"
+}
+const personne_2 = {
+    nom : "Doe",
+    prenom : "John"
+}
+const people = []
+
+people.push (personne_1,personne_2)
+console.table(people)
+console.log(people[0])
+for (let data of people){
+    console.table(people[0]+" "+people[1])
+}
+people.forEach((element) => {
+    console.log(element.nom+' '+element.prenom)
+});
 })()
 //cours_es6
 
